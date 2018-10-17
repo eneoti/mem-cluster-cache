@@ -1,0 +1,30 @@
+{
+  "name": "mem-cluster-cache",
+  "version": "1.0.8",
+  "description": "manage cluster cache",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test/index"
+  },
+  "repository": "https://github.com/eneoti/mem-cluster-cache.git",
+  "author": "Thomas Phan",
+  "license": "MIT",
+  "dependencies": {
+    "docker-testing": "^1.0.0",
+    "ioredis": "^4.1.0",
+    "lodash": "^4.17.11",
+    "mocha": "^5.2.0",
+    "msgpack-lite": "^0.1.26",
+    "process-nextick-args": "^2.0.0"
+  },
+  "devDependencies": {},
+  "files": [
+    "CONTRIBUTING.md",
+    "lib",
+    "test",
+    "index.js"
+  ],
+  "engines": {
+    "node": ">=4.0.0"
+  }
+}
