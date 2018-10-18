@@ -8,6 +8,12 @@ Library for read, write redis
 * Remove by pattern
 
 # How to use
+- Install
+```
+    npm install mem-cluster-cache
+```
+
+- Example
 ```
     cacheService=new redis.CacheService({
         port: 6379,          
