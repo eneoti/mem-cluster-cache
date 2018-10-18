@@ -1,6 +1,6 @@
 {
   "name": "mem-cluster-cache",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "manage cluster cache",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,7 @@
   "devDependencies": {},
   "files": [
     "CONTRIBUTING.md",
+    "README.md",
     "lib",
     "test",
     "index.js"
