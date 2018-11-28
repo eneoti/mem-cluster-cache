@@ -1,6 +1,6 @@
 {
   "name": "mem-cluster-cache",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "manage cluster cache",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "docker-testing": "^1.0.0",
+     "async": "^2.6.0",
     "ioredis": "^4.1.0",
     "lodash": "^4.17.11",
     "mocha": "^5.2.0",
@@ -26,6 +27,6 @@
     "index.js"
   ],
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=8.0.0"
   }
 }
