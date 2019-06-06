@@ -21,7 +21,7 @@ after(async function() {
 describe('#cacheService', function () {
     it('should receive event connect when init CacheService ', function (done) {
      	cacheService=new redis.CacheService({
-			port: 6379,          
+			port: 6379,
 			host: "localhost"
 		})
 		cacheService._db.on('connect',function () {
@@ -34,7 +34,7 @@ describe('#cacheService', function () {
      			done();
      		})
      	}).catch(function(err){
-     		cacheService._db.disconnect()
+     		cacheService._db.quit()
      	})
     })
     it('Get ObjectItem json should same with saveObject before ', function (done) {
@@ -43,7 +43,7 @@ describe('#cacheService', function () {
      			done();
      		}
      	}).catch(function(err){
-     		cacheService._db.disconnect()
+     		cacheService._db.quit()
      	})
     })
     it('Get ObjectItems json should same with saveObject before ', function (done) {
@@ -52,7 +52,7 @@ describe('#cacheService', function () {
      			done();
      		}
      	}).catch(function(err){
-     		cacheService._db.disconnect()
+     		cacheService._db.quit()
      	})
     })
     it('Get Object json should same with saveObject before ', function (done) {
@@ -60,9 +60,9 @@ describe('#cacheService', function () {
      		if(result["thing1"]){
      			done();
      		}
-     		cacheService._db.disconnect()
+     		cacheService._db.quit()
      	}).catch(function(err){
-     		cacheService._db.disconnect()
+     		cacheService._db.quit()
      	})
     })
 })
